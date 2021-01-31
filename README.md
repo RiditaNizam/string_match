@@ -5,19 +5,19 @@ Given 2 strings, a and b, return the number of the positions where they contain 
 
 def string_match(a, b):
   
-  count = 0
+    count = 0
   
-  if len(a) < len(b):
-    shorter = a
+    if len(a) < len(b):
+      shorter = a
     
-  else:
+    else:
   
-    shorter = b
+      shorter = b
   
-  for i in range(len(shorter)-1):
+    for i in range(len(shorter)-1):
   
-    if a[i:i+2] == b[i:i+2]:
+      if a[i:i+2] == b[i:i+2]:
   
-      count += 1
+        count += 1
   
-  return count
+    return count
